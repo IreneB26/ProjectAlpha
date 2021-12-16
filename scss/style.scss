@@ -2,6 +2,7 @@
 @import "_menu.scss";
 @import "_variables.scss";
 @import "_footer.scss";
+@import "_cards.scss";
 
 *,
 *:before,
@@ -11,6 +12,24 @@
   box-sizing: border-box;
 }
 
+// modo oscuro/ claro
+
+.light {
+  background-color: white;
+  color: black;
+  // .theme {
+  //   color: black;
+  // }
+}
+
+.black {
+  background-color: black;
+  color: white;
+  // .theme {
+  //   color: white;
+  // }
+}
+
 // scroll de las secciones
 html {
   scroll-behavior: smooth;
@@ -18,12 +37,22 @@ html {
 
 // estilo padding espacio menu
 body {
-  padding-left: 80px;
+  padding-left: 90px;
+  padding-top: 10px;
 }
 
 // espacio sections para que se vean bien al deslizar
 section[id] {
   scroll-margin-top: 70px;
+}
+
+.theme {
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 25px;
+  line-height: 200px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -48,8 +77,9 @@ section[id] {
   }
 
   .logo_mobile {
-    padding: 0 30px;
-    line-height: 60px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
     display: block;
   }
 
@@ -128,7 +158,7 @@ section[id] {
       height: 2px;
       bottom: 0;
       margin: -1px -12px;
-      background-color: lightseagreen;
+      background-color: #2196f3;
       visibility: visible;
       transform: scaleX(1);
       transition: all 0.4s ease-in-out 0s;
