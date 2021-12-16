@@ -53,9 +53,29 @@ $(".nav-menu").find("a").click(function(){
 
 
 
-  // cerrar menu mobil al ir a una seccion
+  // cerrar menu movil al ir a una seccion
   $(".nav-menu").find("a").click(function(){
     $(".nav-menu").removeClass('nav-menu_visible')
     $(this).addClass('nav-menu_visible')
   })
 
+
+  const theme = document.querySelector(".theme");
+  const body = document.querySelector("body");
+  const icon_theme = document.querySelector(".icon_theme");
+
+
+// añadir clase black
+
+  theme.addEventListener("click", () =>{
+    body.classList.toggle("black");
+
+
+// icono sun and moon theme
+  if(body.classList.contains("black")){
+    icon_theme.setAttribute("class", "fas fa-sun");
+}else{
+    icon_theme.setAttribute("class", "fas fa-moon");
+}
+
+}); 

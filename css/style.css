@@ -2,6 +2,10 @@
   background-color: #fed539;
 }
 
+.logo_mobile {
+  display: none;
+}
+
 .header {
   height: 100%;
   width: 80px;
@@ -127,10 +131,6 @@
   margin-top: 30px;
 }
 
-.logo_mobile {
-  display: none;
-}
-
 .color-brand {
   background-color: #fed539;
 }
@@ -144,16 +144,36 @@
           box-sizing: border-box;
 }
 
+.light {
+  background-color: white;
+  color: black;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  padding-left: 80px;
+  padding-left: 90px;
+  padding-top: 10px;
 }
 
 section[id] {
   scroll-margin-top: 70px;
+}
+
+.theme {
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 25px;
+  line-height: 200px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -183,8 +203,9 @@ section[id] {
   }
 
   .logo_mobile {
-    padding: 0 30px;
-    line-height: 60px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
     display: block;
   }
 
@@ -271,7 +292,7 @@ section[id] {
     height: 2px;
     bottom: 0;
     margin: -1px -12px;
-    background-color: lightseagreen;
+    background-color: #2196f3;
     visibility: visible;
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
