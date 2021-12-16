@@ -7,4 +7,24 @@
   left: 0;
   bottom: 0;
   right: 0;
+  animation-name: "my-animation";
+  animation-duration: 5s;
+  animation-iteration-count: 10;
+}
+
+@keyframes my-animation {
+  from {
+    opacity: 0;
+  }
+  15%,
+  45% {
+    opacity: 0.15;
+  }
+  25%,
+  75% {
+    opacity: 0.35;
+  }
+  to {
+    opacity: 0;
+  }
 }
