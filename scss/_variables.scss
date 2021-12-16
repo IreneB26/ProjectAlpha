@@ -1,0 +1,17 @@
+$amarillo: #fed539;
+
+$menu_color: $amarillo;
+
+// ------------------------------blucle colores
+
+$color-brand: $amarillo; // CC Brand Color
+
+$brand-colors: (
+  "brand": $color-brand,
+);
+
+@each $name, $value in $brand-colors {
+  .color-#{$name} {
+    background-color: $value;
+  }
+}
