@@ -1,13 +1,19 @@
 $amarillo: #fed539;
 
+$azul: #2196f3;
+
 $menu_color: $amarillo;
+
+$detalles: $azul;
 
 // ------------------------------blucle colores
 
 $color-brand: $amarillo; // CC Brand Color
+$detalles: $azul;
 
 $brand-colors: (
   "brand": $color-brand,
+  "detalles": $detalles,
 );
 
 @each $name, $value in $brand-colors {

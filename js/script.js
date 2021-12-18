@@ -1,6 +1,3 @@
-window.onload = function(){ 
-    document.querySelector(".preloader").style.display = "none";
- }
 
 
 //$(window).load(function() {
@@ -16,6 +13,8 @@ const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
 const icon = document.querySelector(".icon");
 const linkActive = document.querySelector(".nav-menu-link");
+
+
 
 
 // funcion abrir boton al click menu hamburguesa
@@ -35,6 +34,7 @@ navToggle.addEventListener("click", () =>{
     }else{
         navToggle.setAttribute("aria-label", "Abrir menú");
     }
+
 
 });
 

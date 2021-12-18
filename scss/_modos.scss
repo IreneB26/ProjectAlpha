@@ -1,0 +1,30 @@
+@import "_variables.scss";
+
+// modo oscuro/ claro
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.black {
+  background-color: black;
+  color: white;
+
+  footer {
+    background-color: white;
+    color: black;
+  }
+  .footer_link {
+    color: black;
+  }
+
+  .footer_link:hover {
+    color: $detalles;
+  }
+
+  // .skew {
+  //   background: white;
+  //   color: black;
+  // }
+}

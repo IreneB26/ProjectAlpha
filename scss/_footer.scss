@@ -1,0 +1,38 @@
+@import "_variables.scss";
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.foot_text {
+  text-align: center;
+  width: 90%;
+  padding-top: 5px;
+  font-size: 15px;
+}
+
+.footer_contact {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  padding: 10px 0;
+  list-style: none;
+}
+
+.footer_li {
+  text-align: center;
+}
+
+.footer_link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer_link:hover {
+  color: $menu_color;
+}
