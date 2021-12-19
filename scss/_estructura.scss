@@ -1,6 +1,10 @@
 @import "_variables.scss";
 
 // estilos de columnas 1 seccion
+.contenido_colum {
+  display: flex;
+  flex-direction: column;
+}
 
 .section_1 {
   width: 100vw;
@@ -15,12 +19,12 @@
   padding: 30px 20px;
   display: flex;
   justify-content: center;
-  position: relative;
+  position: static;
   z-index: -3;
 }
 
 .derecha {
-  height: 25vh;
+  height: 50vh;
   width: 50vw;
   background-color: lightblue;
   padding: 20px;
@@ -30,9 +34,10 @@
   height: 25vh;
   width: 50vw;
   background-color: $detalles;
-  margin: auto;
+  // margin: auto;
   text-align: center;
   padding: 50px;
+  padding-left: 110px;
 }
 
 .hr {
