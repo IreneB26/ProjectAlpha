@@ -4,6 +4,7 @@
 @import "_footer.scss";
 @import "_text.scss";
 @import "_modos.scss";
+@import "_estructura.scss";
 
 *,
 *:before,
@@ -21,7 +22,6 @@ html {
 // estilo padding espacio menu
 body {
   padding-left: 80px;
-  padding-top: 10px;
 }
 
 // espacio sections para que se vean bien al deslizar
@@ -29,14 +29,7 @@ section[id] {
   scroll-margin-top: 70px;
 }
 
-.theme {
-  background: none;
-  border: none;
-  font-size: 30px;
-  padding: 0 25px;
-  line-height: 200px;
-  cursor: pointer;
-}
+// estilos dispositivo mobile
 
 @media (max-width: 768px) {
   body {
@@ -86,6 +79,7 @@ section[id] {
     // transicion menu despues(ya abieta)
     left: 100%;
     transition: left 0.9s;
+    z-index: 2;
   }
 
   .nav-menu-item {
@@ -158,5 +152,9 @@ section[id] {
 
   .footer_contact {
     width: 100%;
+  }
+
+  .footer {
+    display: block;
   }
 }

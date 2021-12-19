@@ -24,6 +24,7 @@
 .nav-menu-link {
   text-decoration: none;
   writing-mode: vertical-rl;
+  font: normal 25px $titulos;
 }
 
 .logo {
@@ -42,7 +43,6 @@
 }
 
 .nav-menu-item {
-  font-size: 18px;
   margin: 0 10px;
   line-height: 40px;
   text-transform: uppercase;
@@ -52,7 +52,7 @@
 
 .nav-menu-link {
   color: black;
-  padding: 8px 12px;
+  padding: 8px 15px;
   border-radius: 3px;
 }
 

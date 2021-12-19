@@ -84,6 +84,7 @@
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
+  font: normal 25px "Lato", sans-serif;
 }
 
 .logo {
@@ -107,7 +108,6 @@
 }
 
 .nav-menu-item {
-  font-size: 18px;
   margin: 0 10px;
   line-height: 40px;
   text-transform: uppercase;
@@ -119,7 +119,7 @@
 
 .nav-menu-link {
   color: black;
-  padding: 8px 12px;
+  padding: 8px 15px;
   border-radius: 3px;
 }
 
@@ -197,13 +197,15 @@
   background-color: #2196f3;
 }
 
-footer {
+.footer {
+  font: normal 16px "Lato", sans-serif;
   position: fixed;
   bottom: 0;
   width: 100%;
   background-color: black;
   color: white;
   padding-bottom: 15px;
+  z-index: -1;
 }
 
 .foot_text {
@@ -246,22 +248,23 @@ footer {
 }
 
 .Iam {
-  font: normal 40px/50px Montserrat, sans-serif;
+  font: normal 60px "Lato", sans-serif;
 }
 
 .Iam p {
+  color: white;
   height: 50px;
   float: left;
   margin-right: 0.3em;
 }
 
 .Iam b {
+  font: normal 40px/50px "Raleway", sans-serif;
   float: left;
   overflow: hidden;
   position: relative;
   height: 50px;
   top: 40px;
-  z-index: 1;
 }
 
 .Iam .innerIam {
@@ -323,6 +326,15 @@ footer {
   background-color: #2196f3;
 }
 
+.theme {
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 25px;
+  line-height: 200px;
+  cursor: pointer;
+}
+
 .light {
   background-color: white;
   color: black;
@@ -333,7 +345,7 @@ footer {
   color: white;
 }
 .black footer {
-  background-color: white;
+  background-color: lightgray;
   color: black;
 }
 .black .footer_link {
@@ -341,6 +353,46 @@ footer {
 }
 .black .footer_link:hover {
   color: #2196f3;
+}
+.black .izquierda {
+  background-color: white;
+}
+.black .p_saludo {
+  color: black;
+}
+
+.color-brand {
+  background-color: #fed539;
+}
+
+.color-detalles {
+  background-color: #2196f3;
+}
+
+.section_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.izquierda {
+  width: 50vw;
+  height: 25vh;
+  background-color: black;
+  padding: 20px;
+}
+
+.derecha {
+  height: 25vh;
+  width: 50vw;
+  background-color: lightblue;
+  padding: 20px;
+}
+
+.skills {
+  height: 25vh;
+  width: 25vw;
+  background-color: #2196f3;
 }
 
 *,
@@ -358,20 +410,10 @@ html {
 
 body {
   padding-left: 80px;
-  padding-top: 10px;
 }
 
 section[id] {
   scroll-margin-top: 70px;
-}
-
-.theme {
-  background: none;
-  border: none;
-  font-size: 30px;
-  padding: 0 25px;
-  line-height: 200px;
-  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -431,6 +473,7 @@ section[id] {
     left: 100%;
     -webkit-transition: left 0.9s;
     transition: left 0.9s;
+    z-index: 2;
   }
 
   .nav-menu-item {
@@ -508,5 +551,9 @@ section[id] {
 
   .footer_contact {
     width: 100%;
+  }
+
+  .footer {
+    display: block;
   }
 }

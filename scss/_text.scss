@@ -1,20 +1,21 @@
 @import "_variables.scss";
 
 .Iam {
-  font: normal 40px/50px Montserrat, sans-serif;
+  font: normal 60px $titulos;
 }
 .Iam p {
+  color: white;
   height: 50px;
   float: left;
   margin-right: 0.3em;
 }
 .Iam b {
+  font: normal 40px/50px $texto;
   float: left;
   overflow: hidden;
   position: relative;
   height: 50px;
   top: 40px;
-  z-index: 1;
 }
 .Iam .innerIam {
   display: inline-block;

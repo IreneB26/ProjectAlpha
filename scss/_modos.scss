@@ -2,6 +2,15 @@
 
 // modo oscuro/ claro
 
+.theme {
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 25px;
+  line-height: 200px;
+  cursor: pointer;
+}
+
 .light {
   background-color: white;
   color: black;
@@ -12,7 +21,7 @@
   color: white;
 
   footer {
-    background-color: white;
+    background-color: lightgray;
     color: black;
   }
   .footer_link {
@@ -21,6 +30,14 @@
 
   .footer_link:hover {
     color: $detalles;
+  }
+
+  .izquierda {
+    background-color: white;
+  }
+
+  .p_saludo {
+    color: black;
   }
 
   // .skew {

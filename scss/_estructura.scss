@@ -1,0 +1,29 @@
+@import "_variables.scss";
+
+// estilos de columnas 1 seccion
+
+.section_1 {
+  display: flex;
+}
+
+.izquierda {
+  width: 50vw;
+  height: 25vh;
+  background-color: black;
+  padding: 20px;
+}
+
+.derecha {
+  height: 25vh;
+  width: 50vw;
+  background-color: lightblue;
+  padding: 20px;
+}
+
+// estilo columnas 2 seccion
+
+.skills {
+  height: 25vh;
+  width: 25vw;
+  background-color: $detalles;
+}
