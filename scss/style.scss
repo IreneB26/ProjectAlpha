@@ -141,11 +141,12 @@ section[id] {
       transition: all 0.4s ease-in-out 0s;
     }
   }
-
+  // estilos thema movil
   .theme {
     color: white;
   }
 
+  // estilos footer movil
   .foot_text {
     width: 100%;
   }
@@ -156,5 +157,34 @@ section[id] {
 
   .footer {
     display: block;
+  }
+
+  // estilos presentacion movil
+  .izquierda {
+    align-items: center;
+  }
+  .Iam {
+    font: normal 20px $titulos;
+  }
+  .Iam p {
+    color: white;
+    height: 15px;
+  }
+  .Iam b {
+    font: normal 30px $texto;
+    height: 35px;
+    top: 15px;
+  }
+
+  @keyframes move {
+    0% {
+      top: 0px;
+    }
+    20% {
+      top: -35px;
+    }
+    40% {
+      top: -75px;
+    }
   }
 }

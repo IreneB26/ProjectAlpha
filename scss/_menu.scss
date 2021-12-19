@@ -24,6 +24,7 @@
 .nav-menu-link {
   text-decoration: none;
   writing-mode: vertical-rl;
+  transform: rotate(180deg);
   font: normal 25px $titulos;
 }
 

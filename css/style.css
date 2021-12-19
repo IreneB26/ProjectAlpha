@@ -84,6 +84,8 @@
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   font: normal 25px "Lato", sans-serif;
 }
 
@@ -264,7 +266,7 @@
   overflow: hidden;
   position: relative;
   height: 50px;
-  top: 40px;
+  top: 30px;
 }
 
 .Iam .innerIam {
@@ -274,28 +276,18 @@
   white-space: nowrap;
   top: 0;
   left: 0;
+  z-index: -2;
   /*animation*/
   -webkit-animation: move 5s;
-  animation: move 5s;
+          animation: move 5s;
   /*animation-iteration-count*/
   -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   /*animation-delay*/
   -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+          animation-delay: 1s;
 }
 
-@keyframes move {
-  0% {
-    top: 0px;
-  }
-  20% {
-    top: -50px;
-  }
-  40% {
-    top: -100px;
-  }
-}
 @-webkit-keyframes move {
   0% {
     top: 0px;
@@ -307,6 +299,7 @@
     top: -100px;
   }
 }
+
 @keyframes move {
   0% {
     top: 0px;
@@ -379,7 +372,15 @@
   width: 50vw;
   height: 25vh;
   background-color: black;
-  padding: 20px;
+  padding: 30px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: -3;
 }
 
 .derecha {
@@ -555,5 +556,50 @@ section[id] {
 
   .footer {
     display: block;
+  }
+
+  .izquierda {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .Iam {
+    font: normal 20px "Lato", sans-serif;
+  }
+
+  .Iam p {
+    color: white;
+    height: 15px;
+  }
+
+  .Iam b {
+    font: normal 30px "Raleway", sans-serif;
+    height: 35px;
+    top: 15px;
+  }
+
+  @-webkit-keyframes move {
+    0% {
+      top: 0px;
+    }
+    20% {
+      top: -35px;
+    }
+    40% {
+      top: -75px;
+    }
+  }
+
+  @keyframes move {
+    0% {
+      top: 0px;
+    }
+    20% {
+      top: -35px;
+    }
+    40% {
+      top: -75px;
+    }
   }
 }
