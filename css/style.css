@@ -399,6 +399,11 @@
   padding: 50px;
 }
 
+.hr {
+  text-align: center;
+  margin-left: 80px;
+}
+
 hr {
   border: solid 1px #2196f3;
   margin: auto;
@@ -421,10 +426,6 @@ html {
 
 p {
   font: normal 16px "Raleway", sans-serif;
-}
-
-body {
-  padding-left: 80px;
 }
 
 section[id] {
