@@ -360,6 +360,7 @@
 }
 
 .section_1 {
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,6 +399,13 @@
   padding: 50px;
 }
 
+hr {
+  border: solid 1px #2196f3;
+  margin: auto;
+  width: 90%;
+  margin-top: 50px;
+}
+
 *,
 *:before,
 *:after {
@@ -413,6 +421,10 @@ html {
 
 p {
   font: normal 16px "Raleway", sans-serif;
+}
+
+body {
+  padding-left: 80px;
 }
 
 section[id] {
@@ -571,6 +583,7 @@ section[id] {
   }
 
   .Iam p {
+    font: bold 20px "Lato", sans-serif;
     color: white;
     height: 15px;
   }

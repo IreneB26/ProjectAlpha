@@ -3,6 +3,7 @@
 // estilos de columnas 1 seccion
 
 .section_1 {
+  width: 100vw;
   display: flex;
   flex-wrap: wrap;
 }
@@ -32,6 +33,13 @@
   margin: auto;
   text-align: center;
   padding: 50px;
+}
+
+hr {
+  border: solid 1px $azul;
+  margin: auto;
+  width: 90%;
+  margin-top: 50px;
 }
 
 // estilo columnas 2 seccion
