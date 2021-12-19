@@ -4,6 +4,7 @@
 
 .section_1 {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .izquierda {
@@ -24,10 +25,13 @@
   padding: 20px;
 }
 
-// estilo columnas 2 seccion
-
-.skills {
+.parrafo_centro {
   height: 25vh;
-  width: 25vw;
+  width: 50vw;
   background-color: $detalles;
+  margin: auto;
+  text-align: center;
+  padding: 50px;
 }
+
+// estilo columnas 2 seccion

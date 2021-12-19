@@ -249,11 +249,8 @@
   background-color: #2196f3;
 }
 
-.Iam {
-  font: normal 60px "Lato", sans-serif;
-}
-
 .Iam p {
+  font: bold 60px "Lato", sans-serif;
   color: white;
   height: 50px;
   float: left;
@@ -266,7 +263,7 @@
   overflow: hidden;
   position: relative;
   height: 50px;
-  top: 30px;
+  top: 40px;
 }
 
 .Iam .innerIam {
@@ -366,6 +363,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .izquierda {
@@ -390,10 +389,13 @@
   padding: 20px;
 }
 
-.skills {
+.parrafo_centro {
   height: 25vh;
-  width: 25vw;
+  width: 50vw;
   background-color: #2196f3;
+  margin: auto;
+  text-align: center;
+  padding: 50px;
 }
 
 *,
@@ -409,8 +411,8 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  padding-left: 80px;
+p {
+  font: normal 16px "Raleway", sans-serif;
 }
 
 section[id] {

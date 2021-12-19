@@ -19,10 +19,14 @@ html {
   scroll-behavior: smooth;
 }
 
-// estilo padding espacio menu
-body {
-  padding-left: 80px;
+p {
+  font: normal 16px $texto;
 }
+
+// estilo padding espacio menu
+// body {
+//   padding-left: 80px;
+// }
 
 // espacio sections para que se vean bien al deslizar
 section[id] {
