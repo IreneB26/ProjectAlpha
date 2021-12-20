@@ -161,6 +161,7 @@ section[id] {
 
   .footer {
     display: block;
+    margin: 0;
   }
 
   // estilos presentacion movil
@@ -191,5 +192,9 @@ section[id] {
     40% {
       top: -75px;
     }
+  }
+
+  .parrafo_centro {
+    padding: 15px;
   }
 }

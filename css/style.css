@@ -146,7 +146,7 @@
   height: 100%;
   bottom: 0;
   margin: -1px 35px;
-  background-color: black;
+  background-color: #2196f3;
   visibility: hidden;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -169,7 +169,7 @@
   height: 100%;
   bottom: 0;
   margin: -1px 35px;
-  background-color: #2196f3;
+  background-color: black;
   visibility: visible;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
@@ -582,6 +582,7 @@ section[id] {
 
   .footer {
     display: block;
+    margin: 0;
   }
 
   .izquierda {
@@ -628,5 +629,8 @@ section[id] {
     40% {
       top: -75px;
     }
+  }
+  .parrafo_centro {
+    padding: 15px;
   }
 }
