@@ -86,7 +86,7 @@
           writing-mode: vertical-rl;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  font: normal 25px "Lato", sans-serif;
+  font: normal 20px "Lato", sans-serif;
 }
 
 .logo {
@@ -208,6 +208,7 @@
   color: white;
   padding-bottom: 15px;
   z-index: -1;
+  margin-left: 80px;
 }
 
 .foot_text {
