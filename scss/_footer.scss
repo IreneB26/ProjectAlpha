@@ -2,19 +2,24 @@
 
 .footer {
   font: normal 16px $titulos;
-  position: fixed;
+  // position: fixed;
+  // position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: black;
+  background-color: $second_color;
   color: white;
   padding-bottom: 15px;
+
+  // margin-left: 80px;
+}
+
+.zindex {
   z-index: -1;
-  margin-left: 80px;
 }
 
 .foot_text {
   text-align: center;
-  width: 90%;
+  width: 100%;
   padding-top: 5px;
   font-size: 15px;
 }
@@ -23,7 +28,8 @@
   display: flex;
   justify-content: space-around;
   width: 90%;
-  padding: 10px 0;
+  padding: 0px 0;
+  margin-top: 40px;
   list-style: none;
 }
 

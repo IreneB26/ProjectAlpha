@@ -4,52 +4,312 @@
 .contenido_colum {
   display: flex;
   flex-direction: column;
+  width: 50%;
+}
+
+.Iam {
+  transform: translate(100px, 20px);
+}
+
+.t_skills {
+  transform: translate(100px, 20px);
+  margin-right: 200px;
 }
 
 .section_1 {
-  width: 100vw;
+  width: 100%;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
+  background-color: $second_color;
+  z-index: -1;
 }
 
 .izquierda {
-  width: 50vw;
-  height: 25vh;
-  background-color: black;
-  padding: 30px 20px;
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  height: 50%;
+  background-color: $second_color;
+  // padding: 30px 20px;
+  // display: flex;
+  // justify-content: center;
   position: static;
+  // text-align: center;
   z-index: -3;
 }
 
 .derecha {
   height: 50vh;
-  width: 50vw;
-  background-color: lightblue;
+  width: 50%;
+  background-color: $second_color;
   padding: 20px;
+  position: relative;
 }
 
 .parrafo_centro {
-  height: 25vh;
-  width: 50vw;
-  background-color: $detalles;
-  // margin: auto;
-  text-align: center;
-  padding: 50px;
-  padding-left: 110px;
+  height: 50%;
+  width: 100%;
+
+  background-color: $second_color;
+  color: white;
+  // display: flex;
+  text-align: justify;
+  // padding: 50px;
+  // align-items: center;
+  // justify-content: center;
 }
 
-.hr {
-  text-align: center;
-  margin-left: 80px;
+// estilo columnas 2 seccion
+
+// div diagonal
+
+.section_2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skew {
+  position: absolute;
+  margin-top: -63px;
+  width: 100%;
+  z-index: -5;
+  padding: 60px 0;
+  transform: skew(0deg, -5deg);
+  background: $second_color;
+}
+
+// .arrow-right {
+//   z-index: 1;
+//   position: absolute;
+//   margin-top: 0;
+//   margin-left: 80px;
+//   border-top: 60px solid transparent;
+//   border-bottom: 60px solid transparent;
+
+//   border-left: 60px solid $menu_color;
+// }
+
+.objetivo_div {
+  width: 25%;
+  // text-align: center;
+}
+
+.contenido_section2 {
+  padding: 60px 200px;
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 50px;
 }
 
 hr {
+  text-align: center;
   border: solid 1px $azul;
   margin: auto;
   width: 90%;
   margin-top: 50px;
 }
 
-// estilo columnas 2 seccion
+// section 3
+
+.section_3 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+}
+
+.glass_skills {
+  width: 10vw;
+  height: 25vh;
+  /* From https://css.glass */
+  background: rgba(255, 182, 71, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(255, 182, 71, 0.15);
+}
+
+// .glass_content_skills {
+//   width: 80vw;
+//   height: 50vh;
+//   background: $second_color;
+//   border-radius: 16px;
+//   margin-left: -50px;
+// }
+
+.glass_content_skills {
+  width: 80vw;
+  height: 50vh;
+  margin-left: -50px;
+  border-radius: 16px;
+  background: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.glass_content_skills .card {
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background-color: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
+}
+.glass_content_skills .card:hover {
+  height: 320px;
+}
+
+.glass_content_skills .card .image {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  padding: 5px;
+
+  top: -40%;
+  left: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  background-color: white;
+}
+
+.glass_content_skills .card .image img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.glass_content_skills .card:hover .image img {
+  background-color: white;
+  transition: 0.1s ease-in;
+  border-radius: 16px;
+}
+
+.glass_content_skills .card .content {
+  position: relative;
+  top: -140px;
+  padding: 10px 15px;
+  color: #111;
+  text-align: center;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.glass_content_skills .card:hover .content {
+  margin-top: 30px;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+// section 4
+.section_4 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacto {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: $second_color;
+}
+
+.form_izquierda {
+  font: normal 20px $texto;
+
+  color: white;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form_derecha {
+  font: normal 20px $texto;
+
+  color: white;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// formulario
+.formulario {
+  width: 75%;
+  text-align: left;
+}
+.label {
+  display: block;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.input:focus {
+  border: 2px solid $menu_color;
+  outline: none;
+}
+
+.boton {
+  color: black;
+  background: $menu_color;
+  border: 0px;
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  display: block;
+  margin-top: 20px;
+}
+
+.contain_contacto {
+  width: 100%;
+  text-align: center;
+  background-color: $second_color;
+  padding: 20px 0px;
+}
+
+.hr_mobile {
+  display: none;
+  border: solid 1px $menu_color;
+}
+
+.redes_sociales {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

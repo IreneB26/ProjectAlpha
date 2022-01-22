@@ -9,11 +9,13 @@
   height: 100%;
   width: 80px;
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
 }
 
 .nav {
+  background-color: $menu_color;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -41,6 +43,8 @@
   flex-direction: column;
   margin-right: 40px;
   list-style: none;
+  position: relative;
+  // z-index: 3;
 }
 
 .nav-menu-item {
@@ -52,7 +56,7 @@
 }
 
 .nav-menu-link {
-  color: black;
+  color: $second_color;
   padding: 8px 15px;
   border-radius: 3px;
 }
@@ -62,7 +66,7 @@
 // }
 
 .nav-toggle {
-  color: black;
+  color: $second_color;
   background: none;
   border: none;
   font-size: 30px;
@@ -102,7 +106,7 @@
     height: 100%;
     bottom: 0;
     margin: -1px 35px;
-    background-color: black;
+    background-color: $second_color;
     visibility: visible;
     transform: scaleX(1);
     transition: all 0.4s ease-in-out 0s;

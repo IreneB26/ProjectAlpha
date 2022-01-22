@@ -7,7 +7,7 @@
   border: none;
   font-size: 30px;
   padding: 0 25px;
-  line-height: 200px;
+  line-height: 130px;
   cursor: pointer;
 }
 
@@ -17,31 +17,105 @@
 }
 
 .black {
-  background-color: black;
+  background-color: $second_color;
   color: white;
 
-  footer {
-    background-color: lightgray;
-    color: black;
+  header {
+    background-color: $detalles;
   }
-  .footer_link {
-    color: black;
+  nav {
+    background-color: $detalles;
+  }
+
+  .nav-menu-link {
+    &:before {
+      background-color: $menu_color;
+    }
+  }
+
+  footer {
+    // background-color: lightgray;
+    // color: black;
+
+    background-color: black;
+    color: white;
   }
 
   .footer_link:hover {
     color: $detalles;
   }
+  .parrafo_centro {
+    background-color: black;
+  }
+  .derecha {
+    background-color: black;
+  }
 
   .izquierda {
-    background-color: white;
+    background-color: black;
   }
 
   .p_saludo {
     color: black;
   }
+  .t_skills {
+    color: white;
+  }
 
+  .Iam p {
+    color: white;
+  }
+  .Iam .innerIam {
+    color: $detalles;
+  }
   // .skew {
   //   background: white;
   //   color: black;
   // }
+  .skew {
+    background: black;
+  }
+  .titulo_objetivo {
+    color: $detalles;
+  }
+
+  .glass_skills {
+    /* From https://css.glass */
+    background: rgba(9, 192, 250, 0.54);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    border: 1px solid rgba(9, 192, 250, 0.3);
+  }
+
+  // contacto
+
+  .contacto_text {
+    color: $detalles;
+  }
+
+  .boton {
+    background-color: $detalles;
+  }
+
+  .input:focus {
+    border: 2px solid $detalles;
+  }
+
+  .footer_link {
+    color: white;
+  }
+
+  .contain_contacto {
+    background-color: black;
+  }
+
+  .contacto {
+    background-color: black;
+  }
+
+  .hr_mobile {
+    border: solid 1px $detalles;
+  }
 }

@@ -1,4 +1,19 @@
 @import "_variables.scss";
+.section_1 {
+  font: normal 20px $texto;
+}
+
+.section_2 {
+  font: normal 20px $texto;
+}
+
+.section_3 {
+  font: normal 20px $texto;
+}
+
+.section_4 {
+  font: normal 20px $texto;
+}
 
 .Iam p {
   font: bold 60px $titulos;
@@ -23,6 +38,7 @@
   top: 0;
   left: 0;
   z-index: -2;
+  text-align: left;
 
   /*animation*/
 
@@ -47,10 +63,38 @@
   }
 }
 
-// div diagonal
+// mi objetivo
 
-// .skew {
-//   padding: 150px 0;
-//   transform: skew(0deg, -10deg);
-//   background: black;
-// }
+.titulo_objetivo {
+  font: bold 30px $titulos;
+  color: $menu_color;
+  transform: translate(100px, 20px);
+}
+
+.contenido_section2_p {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+// skills
+
+.text_skills {
+  font: bold 30px $titulos;
+  color: $second_color;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin: 50% auto;
+}
+
+// contacto
+
+.contacto_text {
+  font: bold 30px $titulos;
+  color: $menu_color;
+}
+
+// footer
+
+.footer {
+  font: normal 20px $texto;
+}
