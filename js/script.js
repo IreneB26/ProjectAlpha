@@ -22,20 +22,35 @@ const footer = document.querySelector(".footer");
 navToggle.addEventListener("click", () =>{
     navMenu.classList.toggle("nav-menu_visible");
 
-// icono cerrar abrir menu cambio
+// icono cambiar al pulsar toogle 
     if(navMenu.classList.contains("nav-menu_visible")){
-        icon.setAttribute("class", "fas fa-times");
+        icon.setAttribute("class", "fas fa-times icon");
     }else{
-        icon.setAttribute("class", "fas fa-bars");
+        icon.setAttribute("class", "fas fa-bars icon");
     }
 
+// icono cambiar al pulsar seccion
+
+ $(".nav-menu").find("a").click(function(){
+  $(".icon").removeClass('fas fa-times')
+  $(".icon").addClass('fas fa-bars')
+})
+
+// cerrar menu movil al cambiar de tema de color
+$(".nav-menu").find("button").click(function(){
+  $(".icon").removeClass('fas fa-times')
+  $(".icon").addClass('fas fa-bars')
+})
+
+
+// zindex footer al abrir menu
     if(navMenu.classList.contains("nav-menu_visible")){
         footer.setAttribute("class", "footer zindex");
     }else{
         footer.setAttribute("class", "footer");
     }
 
-// cambio de aria label 
+// cambio de aria label menu 
     if(navMenu.classList.contains("nav-menu_visible")){
         navToggle.setAttribute("aria-label", "Cerrar menú");
     }else{
@@ -45,18 +60,13 @@ navToggle.addEventListener("click", () =>{
 
 });
 
-// linkActive.addEventListener("click", () =>{
-//     linkActive.classList.toggle("nav-menu-link-active");
 
-// });
 
 // marcar pagina activa
 $(".nav-menu").find("a").click(function(){
     $(".nav-menu a").removeClass('nav-menu-link-active')
     $(this).addClass('nav-menu-link-active')
   })
-
-
 
 
 
@@ -90,14 +100,13 @@ $(".nav-menu").find("a").click(function(){
   const icon_theme = document.querySelector(".icon_theme");
 
 
-
-// añadir clase black
+// añadir clase black para modo oscuro body
 
   theme.addEventListener("click", () =>{
     body.classList.toggle("black");
 
 
-// icono sun and moon theme
+// icono sun and moon theme modo oscuro
   if(body.classList.contains("black")){
     icon_theme.setAttribute("class", "fas fa-sun");
 }else{
@@ -109,5 +118,5 @@ $(".nav-menu").find("a").click(function(){
 }); 
 
 
-// cards
+
 

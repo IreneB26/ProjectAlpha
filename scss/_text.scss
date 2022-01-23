@@ -78,12 +78,22 @@
 
 // skills
 
+.titulo_skills {
+  font: bold 30px $titulos;
+  color: $menu_color;
+  transform: translate(100px, 20px);
+}
+
 .text_skills {
   font: bold 30px $titulos;
   color: $second_color;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   margin: 50% auto;
+}
+
+.titulo_card {
+  font: bold 30px $titulos;
 }
 
 // contacto

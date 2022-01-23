@@ -68,6 +68,8 @@
   .Iam .innerIam {
     color: $detalles;
   }
+
+  // section 2
   // .skew {
   //   background: white;
   //   color: black;
@@ -88,7 +90,17 @@
     -webkit-backdrop-filter: blur(7.3px);
     border: 1px solid rgba(9, 192, 250, 0.3);
   }
+  // section 3
 
+  .titulo_skills {
+    color: $detalles;
+  }
+
+  .card {
+    background-color: black;
+
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  }
   // contacto
 
   .contacto_text {

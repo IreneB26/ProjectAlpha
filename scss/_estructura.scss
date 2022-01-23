@@ -119,12 +119,47 @@ hr {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 100px;
+  margin-top: 50px;
+}
+.skills_div {
+  width: 25%;
+  margin-bottom: 40px;
+  // text-align: center;
 }
 
 .skills {
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 30%;
+  height: 300px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container_card {
+  padding: 2px 16px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.img_card {
+  height: 150px;
+  max-width: 250px;
+  display: block;
+  margin: auto;
 }
 
 .glass_skills {
@@ -227,6 +262,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .contacto {

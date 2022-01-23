@@ -343,6 +343,13 @@
   margin-right: 20%;
 }
 
+.titulo_skills {
+  font: bold 30px "Lato", sans-serif;
+  color: #ffb647;
+  -webkit-transform: translate(100px, 20px);
+          transform: translate(100px, 20px);
+}
+
 .text_skills {
   font: bold 30px "Lato", sans-serif;
   color: #171c26;
@@ -352,6 +359,10 @@
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   margin: 50% auto;
+}
+
+.titulo_card {
+  font: bold 30px "Lato", sans-serif;
 }
 
 .contacto_text {
@@ -441,6 +452,14 @@
   backdrop-filter: blur(7.3px);
   -webkit-backdrop-filter: blur(7.3px);
   border: 1px solid rgba(9, 192, 250, 0.3);
+}
+.black .titulo_skills {
+  color: #09c0fa;
+}
+.black .card {
+  background-color: black;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
 }
 .black .contacto_text {
   color: #09c0fa;
@@ -586,16 +605,65 @@ hr {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 100px;
+  margin-top: 50px;
+}
+
+.skills_div {
+  width: 25%;
+  margin-bottom: 40px;
 }
 
 .skills {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px;
+}
+
+.card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 30%;
+  height: 300px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container_card {
+  padding: 2px 16px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.img_card {
+  height: 150px;
+  max-width: 250px;
+  display: block;
+  margin: auto;
 }
 
 .glass_skills {
@@ -711,6 +779,7 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 50px;
 }
 
 .contacto {
@@ -1117,6 +1186,49 @@ section[id] {
   .contenido_section2_p {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .skills_div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .titulo_skills {
+    margin-left: 0px;
+    margin-top: 0px;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+
+  .skills {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .card {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: 50%;
+    height: 300px;
+    margin-bottom: 80px;
+  }
+
+  .img_card {
+    min-height: 100px;
+    max-width: 250px;
+    display: block;
+    margin: auto;
   }
 
   .form_izquierda {
