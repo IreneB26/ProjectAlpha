@@ -171,9 +171,35 @@ section[id] {
   }
 
   // estilos presentacion movil
-  .izquierda {
-    align-items: center;
+
+  .parrafo_centro {
+    width: 25%;
   }
+
+  .img_inicio_mobile {
+    display: block;
+    width: 30%;
+    height: 60%;
+    display: block;
+    margin-top: 100px;
+    background-image: url(../imagenes/recorte_web.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 10px;
+  }
+
+  .img_inicio_mobile:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #171c269a;
+  }
+
   .Iam {
     font: normal 20px $titulos;
   }
@@ -182,6 +208,7 @@ section[id] {
     color: white;
     height: 15px;
     float: none;
+    text-align: center;
   }
   .Iam b {
     font: normal 30px $texto;
@@ -210,7 +237,8 @@ section[id] {
     flex-direction: column;
   }
   .Iam {
-    transform: translate(0px, 0px);
+    // transform: translate(0px, 0px); dejar en el centro texto
+    transform: translate(0px, 130px);
   }
 
   .t_skills {
@@ -219,8 +247,10 @@ section[id] {
   }
   .izquierda {
     width: 100vw;
-    height: 15vh;
+    height: 50vh;
     padding: 30px 20px;
+
+    align-items: center;
 
     display: flex;
     justify-content: center;
@@ -230,6 +260,7 @@ section[id] {
   .derecha {
     height: 50vh;
     width: 100vw;
+    display: none;
   }
 
   .parrafo_centro {
