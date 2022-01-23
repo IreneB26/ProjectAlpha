@@ -169,6 +169,7 @@ hr {
   transition: 0.3s;
   width: 30%;
   height: 300px;
+  border-radius: 10px;
 }
 
 .card:hover {
@@ -208,6 +209,22 @@ hr {
 
 .img_card3 {
   background-image: url(../imagenes/SEO.png);
+}
+
+.content_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lista_skill {
+  margin-top: 10px;
+  list-style: none;
+  padding: 10px;
+  font: normal 20px $texto;
+}
+
+.figma {
+  margin-top: 40%;
 }
 
 // section 4
