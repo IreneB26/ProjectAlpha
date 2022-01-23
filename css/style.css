@@ -688,11 +688,30 @@ hr {
           flex-direction: column;
 }
 
-.img_card {
+.img_card1,
+.img_card2,
+.img_card3 {
   height: 150px;
   max-width: 250px;
   display: block;
   margin: auto;
+  padding: 10px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.img_card1 {
+  background-image: url(../imagenes/html.png);
+}
+
+.img_card2 {
+  background-image: url(../imagenes/ux_ui.png);
+}
+
+.img_card3 {
+  background-image: url(../imagenes/SEO.png);
 }
 
 .glass_skills {
