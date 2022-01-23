@@ -437,6 +437,9 @@
 .black .Iam .innerIam {
   color: #09c0fa;
 }
+.black .img_inicio:before {
+  background-color: #0000009a;
+}
 .black .skew {
   background: black;
 }
@@ -712,107 +715,6 @@ hr {
 
 .img_card3 {
   background-image: url(../imagenes/SEO.png);
-}
-
-.glass_skills {
-  width: 10vw;
-  height: 25vh;
-  /* From https://css.glass */
-  background: rgba(255, 182, 71, 0.5);
-  border-radius: 16px;
-  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.4px);
-  -webkit-backdrop-filter: blur(4.4px);
-  border: 1px solid rgba(255, 182, 71, 0.15);
-}
-
-.glass_content_skills {
-  width: 80vw;
-  height: 50vh;
-  margin-left: -50px;
-  border-radius: 16px;
-  background: lightgray;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 60px;
-}
-
-.glass_content_skills .card {
-  position: relative;
-  max-width: 300px;
-  height: 215px;
-  background-color: #fff;
-  margin: 30px 10px;
-  padding: 20px 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  border-radius: 15px;
-}
-
-.glass_content_skills .card:hover {
-  height: 320px;
-}
-
-.glass_content_skills .card .image {
-  position: relative;
-  width: 260px;
-  height: 260px;
-  padding: 5px;
-  top: -40%;
-  left: 8px;
-  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  background-color: white;
-}
-
-.glass_content_skills .card .image img {
-  max-width: 100%;
-  border-radius: 15px;
-}
-
-.glass_content_skills .card:hover .image img {
-  background-color: white;
-  -webkit-transition: 0.1s ease-in;
-  transition: 0.1s ease-in;
-  border-radius: 16px;
-}
-
-.glass_content_skills .card .content {
-  position: relative;
-  top: -140px;
-  padding: 10px 15px;
-  color: #111;
-  text-align: center;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-.glass_content_skills .card:hover .content {
-  margin-top: 30px;
-  visibility: visible;
-  opacity: 1;
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
 }
 
 .section_4 {
