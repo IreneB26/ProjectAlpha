@@ -14,6 +14,22 @@ const navMenu = document.querySelector(".nav-menu");
 const icon = document.querySelector(".icon");
 const linkActive = document.querySelector(".nav-menu-link");
 const footer = document.querySelector(".footer");
+const body = document.querySelector("body");
+
+
+
+// modo oscuro detecta el modo del pc
+const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+const userPrefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+
+if(userPrefersDark){
+    console.log("User prefers a dark interface");
+    $("body").addClass('black')
+  }
+  else {
+    $("body").addClass('')
+  }
 
 
 
@@ -96,7 +112,6 @@ $(".nav-menu").find("a").click(function(){
 
 
   const theme = document.querySelector(".theme");
-  const body = document.querySelector("body");
   const icon_theme = document.querySelector(".icon_theme");
 
 
