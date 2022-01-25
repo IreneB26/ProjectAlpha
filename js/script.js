@@ -28,7 +28,7 @@ if(userPrefersDark){
     $("body").addClass('black')
   }
   else {
-    $("body").addClass('')
+    $("body").removeClass('')
   }
 
 

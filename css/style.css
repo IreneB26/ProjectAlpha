@@ -1,4 +1,80 @@
-.load {
+body {
+  margin: 0;
+}
+
+@media (prefers-color-scheme: light) {
+  .loader {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-45deg, #ffb647, white);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 15s ease infinite;
+            animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+
+  @-webkit-keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .loader {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-45deg, #09c0fa, white);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 15s ease infinite;
+            animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+
+  @-webkit-keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+/* .load {
+  width: 25%;
+  height: 25%;
   display: block;
   font-size: 0;
   margin: auto;
@@ -8,21 +84,23 @@
   bottom: 0;
   right: 0;
   -webkit-animation-name: "my-animation";
-          animation-name: "my-animation";
+  animation-name: "my-animation";
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: 10;
-          animation-iteration-count: 10;
+  animation-iteration-count: 10;
 }
 
 @-webkit-keyframes my-animation {
   from {
     opacity: 0;
   }
-  15%, 45% {
+  15%,
+  45% {
     opacity: 0.15;
   }
-  25%, 75% {
+  25%,
+  75% {
     opacity: 0.35;
   }
   to {
@@ -34,14 +112,59 @@
   from {
     opacity: 0;
   }
-  15%, 45% {
+  15%,
+  45% {
     opacity: 0.15;
   }
-  25%, 75% {
+  25%,
+  75% {
     opacity: 0.35;
   }
   to {
     opacity: 0;
+  }
+} */
+.load {
+  width: 25%;
+  height: 25%;
+  display: block;
+  font-size: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  animation-name: parpadeo;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .color-brand {
@@ -57,7 +180,7 @@
 }
 
 .header {
-  height: 100%;
+  height: 100vh;
   width: 80px;
   position: fixed;
   z-index: 1;
