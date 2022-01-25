@@ -632,6 +632,10 @@ body {
   width: 50%;
 }
 
+.salto_mobile {
+  display: none;
+}
+
 .Iam {
   -webkit-transform: translate(100px, 20px);
           transform: translate(100px, 20px);
@@ -1399,5 +1403,21 @@ section[id] {
 
   .t_skills {
     margin-top: 50px;
+  }
+}
+@media (min-width: 1800px) {
+  .skew {
+    -webkit-transform: skew(0deg, -3deg);
+            transform: skew(0deg, -3deg);
+    margin-top: -70px;
+    padding: 70px 0;
+  }
+
+  .salto_mobile {
+    display: block;
+  }
+
+  .nav-menu-item {
+    line-height: 120px;
   }
 }
