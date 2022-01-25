@@ -1381,12 +1381,16 @@ section[id] {
     display: block;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1400px) {
   .skew {
     -webkit-transform: skew(0deg, -5deg);
             transform: skew(0deg, -5deg);
     margin-top: -70px;
     padding: 70px 0;
+  }
+
+  .salto_mobile {
+    display: block;
   }
 
   .izquierda {
@@ -1406,7 +1410,7 @@ section[id] {
     margin-top: 50px;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1700px) {
   .skew {
     -webkit-transform: skew(0deg, -3deg);
             transform: skew(0deg, -3deg);
@@ -1428,5 +1432,10 @@ section[id] {
 
   .t_skills {
     font: normal 20px "Raleway", sans-serif;
+  }
+
+  .Iam {
+    -webkit-transform: translate(70px, 20px);
+            transform: translate(70px, 20px);
   }
 }

@@ -355,11 +355,15 @@ section[id] {
 
 // pantallas grandes
 
-@media (min-width: 1500px) {
+@media (min-width: 1400px) {
   .skew {
     transform: skew(0deg, -5deg);
     margin-top: -70px;
     padding: 70px 0;
+  }
+
+  .salto_mobile {
+    display: block;
   }
 
   .izquierda {
@@ -381,7 +385,7 @@ section[id] {
   }
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 1700px) {
   .skew {
     transform: skew(0deg, -3deg);
     margin-top: -70px;
@@ -402,5 +406,9 @@ section[id] {
 
   .t_skills {
     font: normal 20px $texto;
+  }
+
+  .Iam {
+    transform: translate(70px, 20px);
   }
 }
