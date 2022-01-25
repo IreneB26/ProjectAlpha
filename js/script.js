@@ -15,6 +15,8 @@ const icon = document.querySelector(".icon");
 const linkActive = document.querySelector(".nav-menu-link");
 const footer = document.querySelector(".footer");
 const body = document.querySelector("body");
+const theme = document.querySelector(".theme");
+const icon_theme = document.querySelector(".icon_theme");
 
 
 
@@ -26,6 +28,7 @@ const userPrefersLight = window.matchMedia && window.matchMedia('(prefers-color-
 if(userPrefersDark){
     console.log("User prefers a dark interface");
     $("body").addClass('black')
+    icon_theme.setAttribute("class", "fas fa-sun");
   }
   else {
     $("body").removeClass('')
@@ -111,8 +114,7 @@ $(".nav-menu").find("a").click(function(){
   })
 
 
-  const theme = document.querySelector(".theme");
-  const icon_theme = document.querySelector(".icon_theme");
+
 
 
 // añadir clase black para modo oscuro body
