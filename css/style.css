@@ -645,6 +645,7 @@ body {
   -webkit-transform: translate(100px, 20px);
           transform: translate(100px, 20px);
   margin-right: 200px;
+  font: normal 16px "Raleway", sans-serif;
 }
 
 .section_1 {
@@ -1419,5 +1420,13 @@ section[id] {
 
   .nav-menu-item {
     line-height: 120px;
+  }
+
+  .contenido_section2_p {
+    font: normal 20px "Raleway", sans-serif;
+  }
+
+  .t_skills {
+    font: normal 20px "Raleway", sans-serif;
   }
 }
