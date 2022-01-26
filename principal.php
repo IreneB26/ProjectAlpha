@@ -218,36 +218,7 @@
         </div>
 
 
-           <?php 
-if(isset($_POST['submit'])){
-
-$mensaje .="Contacto desde la web:\n";
-$mensaje .="-------------------------------------\n"; $mensaje .="\n";
-$mensaje .="Nombre: $_POST[name]\n";
-$mensaje .="\n";
-$mensaje .="email: $_POST[email]\n";
-$mensaje .="\n";
-$mensaje .="Mensaje: $_POST[mensaje]\n";
-$desde = 'From: Desde la web <irene@gmail.com>'."\r\n";
-$to = "bargues.irene@gmail.com";
-$subject ="Web Contacto AboutMe";
-
-//creando las variables para el email// $to = 'webmaster@ceramica.com'; $subject = 'Mensaje desde la web';
-//Si no hay errores, enviamos el email y damos un mensaje de envío al usuario//
-mail($to, $subject,$mensaje,$desde);
- ?>
-<script> console.log("enviado");
-window.location = "principal.php#4";
-alert("Mensaje enviado correctamente");
-// poner pop up de mensaje enviado
-</script>
- <?php
-
-// echo "Su mensaje se ha enviado correctamente"; 
-exit();
-
-}
-//aqui termina el bloque de php ?>  
+          
           
       <hr class="hr_mobile">
 
@@ -285,7 +256,34 @@ exit();
     <p class="foot_text">Designed and developed with ❤ by Irene Bargues. © 2021 All rights reserved</p>
     
   </footer>
-  
+  <?php 
+if(isset($_POST['submit'])){
+
+$mensaje .="Contacto desde la web:\n";
+$mensaje .="-------------------------------------\n"; $mensaje .="\n";
+$mensaje .="Nombre: $_POST[name]\n";
+$mensaje .="\n";
+$mensaje .="email: $_POST[email]\n";
+$mensaje .="\n";
+$mensaje .="Mensaje: $_POST[mensaje]\n";
+$desde = 'From: Desde la web <irene@gmail.com>'."\r\n";
+$to = "bargues.irene@gmail.com";
+$subject ="Web Contacto AboutMe";
+
+
+mail($to, $subject,$mensaje,$desde);
+echo "<p class='confirmacion'>Su mensaje se ha enviado correctamente</p>"; 
+
+
+ ?>
+<script> console.log("enviado");
+window.location = "principal.php#4";
+
+</script>
+ <?php
+exit();
+}
+ ?>  
 
 </body>
 </html>

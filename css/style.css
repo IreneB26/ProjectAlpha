@@ -1002,6 +1002,14 @@ hr {
           justify-content: center;
 }
 
+.confirmacion {
+  text-align: center;
+  color: black;
+  font: normal 16px "Raleway", sans-serif;
+  background-color: lightgreen;
+  width: 100%;
+}
+
 *,
 *:before,
 *:after {
@@ -1318,6 +1326,7 @@ section[id] {
     padding: 60px 120px;
     margin-left: 0px;
     margin-top: 30px;
+    text-align: left;
   }
 
   .contenido_section2_p {
