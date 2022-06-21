@@ -1,6 +1,6 @@
 # ProjectAlpha
 
-En esta web puedes el proyecto de About me. [Visita la web Aquí]([https://frontend.esatid3-2021.com/ireneb/project-alpha/]).
+En esta web puedes el proyecto de About me. [Visita la web Aquí](https://frontend.esatid3-2021.com/ireneb/project-alpha/).
 
 ## **Objetivo**
 
