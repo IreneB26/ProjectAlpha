@@ -1,5 +1,7 @@
 # ProjectAlpha
 
+En esta web puedes el proyecto de About me. [Visita la web Aquí]([https://frontend.esatid3-2021.com/ireneb/project-alpha/]).
+
 ## **Objetivo**
 
 
@@ -19,4 +21,5 @@ El proyecto se ha construido con los siguientes programas:
   - <a href="https://www.figma.com/file/Q7BzoG8wpJXEl3Vhw1aZDG/IreneBargues-projects?node-id=16%3A3">Figma</a>: diseño de wireframes.
 - Para el desarrollo: 
   - <a href="https://code.visualstudio.com/">Visual Studio Code</a>: editor de código fuente.
+
 
